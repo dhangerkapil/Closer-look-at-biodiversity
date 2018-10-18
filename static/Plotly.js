@@ -1,5 +1,4 @@
-/*Use the route /names to populate a dropdown select element with the list of sample names.
-Use document.getElementById, document.createElement and append to populate the create option elements and append them to the dropdown selector.*/
+
 let optionSelect = document.querySelector("#selDataset");
 d3.json("/names", function(error, response) {
     if(error) return console.warn(error);
